@@ -1,0 +1,74 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+  padding: 2rem;
+
+  .gramophone{
+    .disk{
+      position: relative;
+      transform: rotate(45deg);
+      display: grid;
+      place-items: center;
+      width: 10rem;
+      height: 10rem;
+      background: conic-gradient(#000, #000, #9F9F9F, #000, #000, #000, #9F9F9F, #000, #000);
+      border-radius: 50%;
+      border: .15rem solid #000;
+
+      &::before, &::after{
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+      }
+
+      &::before{
+        rotate: 1turn;
+        transition: rotate 1s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
+      }
+
+      &.type-2{
+        &::before{
+          width: 3rem;
+          height: 3rem;
+          background: conic-gradient(
+            #CACACA 8%,
+            #333 8%,
+            #333 35%,
+            #CACACA 35%,
+            #CACACA 65%,
+            #333 65%,
+            #333 92%,
+            #CACACA 92%,
+            #CACACA);
+          box-shadow:
+            0 0 0 .1rem #333,
+            0 0 0 .2rem #4E4E4E,
+            0 0 0 .7rem #000;
+        }
+        &::after{
+          width: 2.6rem;
+          height: 2.6rem;
+          box-shadow:
+            0 0 0 .1rem #333,
+            inset 0 0 0 1.2rem #fff,
+            inset 0 0 0 10rem #353535;
+        }
+      }
+    }
+  }
+
+
+  input[type=checkbox]:checked + .gramophone .disk::before{
+    rotate: 0turn;
+    transition: rotate 0s, transform 3000s;
+    transform: rotate(8000turn);
+  }
+}
