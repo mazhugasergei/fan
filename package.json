@@ -1,5 +1,5 @@
 {
-  "name": "fan",
+  "name": "gramophone",
   "private": true,
   "dependencies": {
     "@types/node": "^16.18.25",
