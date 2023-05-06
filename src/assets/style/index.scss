@@ -31,7 +31,23 @@ body{
 
       &::before{
         rotate: 1turn;
-        transition: rotate 1s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
+        transition: rotate 1.3s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
+      }
+
+      &.type-1{
+        &::before{
+          width: 3.5rem;
+          height: 3.5rem;
+          background: url('../images/vinyl.png');
+          background-size: cover;
+          background-position: center;
+          box-shadow: 0 0 0 .5rem #000;
+        }
+        &::after{
+          width: .465rem;
+          height: .465rem;
+          background: #353535;
+        }
       }
 
       &.type-2{
@@ -58,7 +74,7 @@ body{
           height: 2.6rem;
           box-shadow:
             0 0 0 .1rem #333,
-            inset 0 0 0 1.2rem #fff,
+            inset 0 0 0 1.15rem #fff,
             inset 0 0 0 10rem #353535;
         }
       }
