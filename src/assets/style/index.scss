@@ -12,6 +12,37 @@ body{
   padding: 2rem;
 
   .gramophone{
+    position: relative;
+    isolation: isolate;
+    display: inline-block;
+    background: url('https://img.freepik.com/free-photo/wood-texture-vintage-brown-floorboard-background_53876-108350.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+    }
+
+    &::before{
+      inset: .5rem;
+      background: inherit;
+      background-size: inherit;
+      background-position: inherit;
+      box-shadow: inset .1rem .1rem .2rem 0 #000;
+    }
+    
+    &::after{
+      inset: 1.5rem;
+      background: linear-gradient(to bottom right, #1b3b4e, #002638);
+      border-radius: .2rem;
+      box-shadow:
+        inset .04rem .04rem .04rem 0 #ffffff18,
+        inset -0.04rem -0.04rem .04rem 0 #00000097;
+    }
+
     .disk{
       position: relative;
       transform: rotate(45deg);
@@ -31,13 +62,13 @@ body{
 
       &::before{
         rotate: 1turn;
-        transition: rotate 1.3s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
+        transition: rotate 2.6s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
       }
 
       &.is-playing::before{
         rotate: 0turn;
-        transition: rotate 0s, transform 3000s;
-        transform: rotate(8000turn);
+        transition: rotate 0s, transform 12000s;
+        transform: rotate(16000turn);
       }
 
       &.type-1{
@@ -52,7 +83,7 @@ body{
         &::after{
           width: .465rem;
           height: .465rem;
-          background: #353535;
+          background: #0000009c;
         }
       }
 
@@ -89,12 +120,12 @@ body{
     .progress{
       width: 10rem;
       height: 0.2rem;
-      background: #0000002b;
+      background: #00000094;
       margin-top: 1rem;
       div{
         height: 100%;
         width: 0;
-        background: #FE020C;
+        background: #1b3b4e;
       }
     }
   }

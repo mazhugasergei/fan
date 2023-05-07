@@ -18,13 +18,12 @@ export default () => {
   return (
     <main>
       <div className="container">
-        <audio ref={audioRef} src="/audio/Heartaches.mp3" />
-        <input type="checkbox" onChange={(e)=>{setIsPlaying(e.target.checked)}} />
         <div className="gramophone">
+          <audio ref={audioRef} src="/audio/Heartaches.mp3" />
           <div className={`disk type-1 ${isPlaying ? "is-playing" : ""}`} />
-          {/* <div className={`disk type-2 ${isPlaying ? "is-playing" : ""}`} /> */}
           <div className="progress"><div ref={progressRef}/></div>
         </div>
+        <input type="checkbox" onChange={(e)=>{setIsPlaying(e.target.checked)}} />
       </div>
     </main>
   )

@@ -11,6 +11,33 @@ body {
 .container {
   padding: 2rem;
 }
+.container .gramophone {
+  position: relative;
+  isolation: isolate;
+  display: inline-block;
+  background: url("https://img.freepik.com/free-photo/wood-texture-vintage-brown-floorboard-background_53876-108350.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+.container .gramophone::before, .container .gramophone::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+.container .gramophone::before {
+  inset: 0.5rem;
+  background: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem 0 #000;
+}
+.container .gramophone::after {
+  inset: 1.5rem;
+  background: linear-gradient(to bottom right, #1b3b4e, #002638);
+  border-radius: 0.2rem;
+  box-shadow: inset 0.04rem 0.04rem 0.04rem 0 rgba(255, 255, 255, 0.0941176471), inset -0.04rem -0.04rem 0.04rem 0 rgba(0, 0, 0, 0.5921568627);
+}
 .container .gramophone .disk {
   position: relative;
   transform: rotate(45deg);
@@ -29,12 +56,12 @@ body {
 }
 .container .gramophone .disk::before {
   rotate: 1turn;
-  transition: rotate 1.3s cubic-bezier(0.35, 0.54, 0.8, 0.96), transform 0s 9000000000s;
+  transition: rotate 2.6s cubic-bezier(0.35, 0.54, 0.8, 0.96), transform 0s 9000000000s;
 }
 .container .gramophone .disk.is-playing::before {
   rotate: 0turn;
-  transition: rotate 0s, transform 3000s;
-  transform: rotate(8000turn);
+  transition: rotate 0s, transform 12000s;
+  transform: rotate(16000turn);
 }
 .container .gramophone .disk.type-1::before {
   width: 3.5rem;
@@ -47,7 +74,7 @@ body {
 .container .gramophone .disk.type-1::after {
   width: 0.465rem;
   height: 0.465rem;
-  background: #353535;
+  background: rgba(0, 0, 0, 0.6117647059);
 }
 .container .gramophone .disk.type-2::before {
   width: 3rem;
@@ -63,11 +90,11 @@ body {
 .container .gramophone .progress {
   width: 10rem;
   height: 0.2rem;
-  background: rgba(0, 0, 0, 0.168627451);
+  background: rgba(0, 0, 0, 0.5803921569);
   margin-top: 1rem;
 }
 .container .gramophone .progress div {
   height: 100%;
   width: 0;
-  background: #FE020C;
+  background: #1b3b4e;
 }/*# sourceMappingURL=index.css.map */
