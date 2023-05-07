@@ -31,10 +31,15 @@ body {
   rotate: 1turn;
   transition: rotate 1.3s cubic-bezier(0.35, 0.54, 0.8, 0.96), transform 0s 9000000000s;
 }
+.container .gramophone .disk.is-playing::before {
+  rotate: 0turn;
+  transition: rotate 0s, transform 3000s;
+  transform: rotate(8000turn);
+}
 .container .gramophone .disk.type-1::before {
   width: 3.5rem;
   height: 3.5rem;
-  background: url("../images/vinyl.png");
+  background: url("../images/vinyl-1.png");
   background-size: cover;
   background-position: center;
   box-shadow: 0 0 0 0.5rem #000;
@@ -55,8 +60,14 @@ body {
   height: 2.6rem;
   box-shadow: 0 0 0 0.1rem #333, inset 0 0 0 1.15rem #fff, inset 0 0 0 10rem #353535;
 }
-.container input[type=checkbox]:checked + .gramophone .disk::before {
-  rotate: 0turn;
-  transition: rotate 0s, transform 3000s;
-  transform: rotate(8000turn);
+.container .gramophone .progress {
+  width: 10rem;
+  height: 0.2rem;
+  background: rgba(0, 0, 0, 0.168627451);
+  margin-top: 1rem;
+}
+.container .gramophone .progress div {
+  height: 100%;
+  width: 0;
+  background: #FE020C;
 }/*# sourceMappingURL=index.css.map */

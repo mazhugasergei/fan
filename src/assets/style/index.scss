@@ -34,11 +34,17 @@ body{
         transition: rotate 1.3s cubic-bezier(.35,.54,.8,.96), transform 0s 9e9s;
       }
 
+      &.is-playing::before{
+        rotate: 0turn;
+        transition: rotate 0s, transform 3000s;
+        transform: rotate(8000turn);
+      }
+
       &.type-1{
         &::before{
           width: 3.5rem;
           height: 3.5rem;
-          background: url('../images/vinyl.png');
+          background: url('../images/vinyl-1.png');
           background-size: cover;
           background-position: center;
           box-shadow: 0 0 0 .5rem #000;
@@ -79,12 +85,17 @@ body{
         }
       }
     }
-  }
 
-
-  input[type=checkbox]:checked + .gramophone .disk::before{
-    rotate: 0turn;
-    transition: rotate 0s, transform 3000s;
-    transform: rotate(8000turn);
+    .progress{
+      width: 10rem;
+      height: 0.2rem;
+      background: #0000002b;
+      margin-top: 1rem;
+      div{
+        height: 100%;
+        width: 0;
+        background: #FE020C;
+      }
+    }
   }
 }
