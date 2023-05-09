@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/gramophone/static/css/main.abaefc4f.css",
+    "main.js": "/gramophone/static/js/main.bf469f6b.js",
+    "static/media/vinyl-1.png": "/gramophone/static/media/vinyl-1.a7ea70490ed64c84aa3a.png",
+    "index.html": "/gramophone/index.html",
+    "main.abaefc4f.css.map": "/gramophone/static/css/main.abaefc4f.css.map",
+    "main.bf469f6b.js.map": "/gramophone/static/js/main.bf469f6b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abaefc4f.css",
+    "static/js/main.bf469f6b.js"
+  ]
+}
