@@ -14,8 +14,8 @@ body{
   .gramophone{
     position: relative;
     isolation: isolate;
-    display: inline-block;
-    background: url('https://img.freepik.com/free-photo/wood-texture-vintage-brown-floorboard-background_53876-108350.jpg');
+    display: inline-flex;
+    background: url('https://images.squarespace-cdn.com/content/v1/5cffdfdd7a7d7700013ba738/1569443783388-18JK6WUQYKPSNJNHH4OC/Imported_0003_Ebony%252C%2BMun.jpg?format=1000w');
     background-size: cover;
     background-position: center;
     padding: 1rem;
@@ -117,16 +117,14 @@ body{
       }
     }
 
-    .progress{
-      width: 10rem;
-      height: 0.2rem;
-      background: #00000094;
-      margin-top: 1rem;
-      div{
-        height: 100%;
-        width: 0;
-        background: #1b3b4e;
-      }
+    .reproducer{
+      position: relative;
+      transform-origin: 2.68rem 2.33rem;
+      right: .5rem;
+      width: 4rem;
+      height: 10rem;
+      margin-top: -0.9rem;
+      margin-left: -2.5rem;
     }
   }
 }
