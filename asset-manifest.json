@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/gramophone/static/css/main.abaefc4f.css",
-    "main.js": "/gramophone/static/js/main.848fdcd5.js",
+    "main.css": "/gramophone/static/css/main.6eb0dfd8.css",
+    "main.js": "/gramophone/static/js/main.89b4f849.js",
     "static/media/vinyl-1.png": "/gramophone/static/media/vinyl-1.a7ea70490ed64c84aa3a.png",
     "index.html": "/gramophone/index.html",
-    "main.abaefc4f.css.map": "/gramophone/static/css/main.abaefc4f.css.map",
-    "main.848fdcd5.js.map": "/gramophone/static/js/main.848fdcd5.js.map"
+    "main.6eb0dfd8.css.map": "/gramophone/static/css/main.6eb0dfd8.css.map",
+    "main.89b4f849.js.map": "/gramophone/static/js/main.89b4f849.js.map"
   },
   "entrypoints": [
-    "static/css/main.abaefc4f.css",
-    "static/js/main.848fdcd5.js"
+    "static/css/main.6eb0dfd8.css",
+    "static/js/main.89b4f849.js"
   ]
 }
