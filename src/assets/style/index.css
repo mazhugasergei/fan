@@ -15,7 +15,7 @@ body {
   position: relative;
   isolation: isolate;
   display: inline-flex;
-  background: url("https://images.squarespace-cdn.com/content/v1/5cffdfdd7a7d7700013ba738/1569443783388-18JK6WUQYKPSNJNHH4OC/Imported_0003_Ebony%252C%2BMun.jpg?format=1000w");
+  background: #242424;
   background-size: cover;
   background-position: center;
   padding: 1rem;
@@ -28,13 +28,11 @@ body {
 .container .gramophone::before {
   inset: 0.5rem;
   background: inherit;
-  background-size: inherit;
-  background-position: inherit;
   box-shadow: inset 0.1rem 0.1rem 0.2rem 0 #000;
 }
 .container .gramophone::after {
   inset: 1.5rem;
-  background: linear-gradient(to bottom right, #1b3b4e, #002638);
+  background: linear-gradient(to bottom right, #2c404c, #132f3c);
   border-radius: 0.2rem;
   box-shadow: inset 0.04rem 0.04rem 0.04rem 0 rgba(255, 255, 255, 0.0941176471), inset -0.04rem -0.04rem 0.04rem 0 rgba(0, 0, 0, 0.5921568627);
 }
